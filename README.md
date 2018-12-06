@@ -1,2 +1,2 @@
 # StudyNote
-学习笔记
+Android相关学习笔记
