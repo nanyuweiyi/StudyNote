@@ -30,6 +30,7 @@ if (version < 18) {
 JS调用Android的代码：
 
 1、通过webview的addJavascriptInterface(new JSInterface(), "jsInterface");进行对象映射；
+
 2、通过webview的shouldOverrideUrlLoading()回调拦截url;
 
 
