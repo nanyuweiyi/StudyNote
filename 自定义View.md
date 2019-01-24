@@ -84,7 +84,7 @@ private int getSize(int measureSpec){
 layout，顾名思义，就是定义这个控件所处的布局，其实即便我们通过 onMeasure 决定了这个控件的宽高，但是并不是所有的宽高都是能显示出来的，我们还需要通过 layout 给这个控件分配可以使用的控件。
 
 因为 layout 不难，理解即可，所以毫不客气的直接上代码了。
-
+```
 @Override
 public void layout(int l, int t, int r, int b) {
     super.layout(l, t, r, b);
@@ -94,6 +94,7 @@ public void layout(int l, int t, int r, int b) {
     Log.d("layout:","b:"+b);
 }
 这4个参数的意义分别是：距左距离、距顶距离、距右距离、距底距离
+```
 
 #### 自定义控件 - View - onDraw
 该准备的准备了，不该说的也说了，接下来就就是要重写的我们的onDraw方法，既然是自定义View，无非就是显得'花销'一点，定制性高点，那么onDraw方法非调用不可。
